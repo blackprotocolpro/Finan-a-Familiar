@@ -1,0 +1,2 @@
+CREATE TABLE lancamentos (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), data TEXT, referencia TEXT, pessoa TEXT, tipo TEXT, categoria TEXT, descricao TEXT, valor DECIMAL, paga BOOLEAN, dataPagamento TEXT, classificacao TEXT);
+CREATE TABLE meses_controle (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), referencia TEXT UNIQUE, status TEXT, abertoEm TEXT, fechadoEm TEXT, reabertoEm TEXT, resumo JSONB);
